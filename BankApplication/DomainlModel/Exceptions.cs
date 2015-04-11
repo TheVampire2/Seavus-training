@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace DomainlModel
 {
+    /// <summary>
+    /// currency missmatch exception class
+    /// </summary>
     public class CurrencyMissmatchException : ApplicationException
     {
         public override string Message
@@ -16,6 +19,9 @@ namespace DomainlModel
             }
         }
     }
+    /// <summary>
+    /// Limit overreached exception class
+    /// </summary>
     public class LimitOverreachedException : ApplicationException
     {
         private CurrencyAmount Amount { get; set; }
@@ -33,6 +39,9 @@ namespace DomainlModel
         }
         
     }
+    /// <summary>
+    /// UI exceptions wraper
+    /// </summary>
     public class UserInterfaceException : ApplicationException
     {
         public Exception exception;
@@ -49,6 +58,9 @@ namespace DomainlModel
 
 
     }
+    /// <summary>
+    /// Buisness logic exeption wrapper
+    /// </summary>
     public class BuisnessLogicException : ApplicationException
     {
         public Exception exception;

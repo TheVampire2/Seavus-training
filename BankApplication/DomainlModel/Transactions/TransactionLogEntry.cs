@@ -11,9 +11,21 @@ namespace DomainlModel
     /// </summary>
     public class TransactionLogEntry
     {
+        /// <summary>
+        /// Type of the transaction
+        /// </summary>
         private TransactionType TransactionType { get; set; }
+        /// <summary>
+        /// Amount of transaction
+        /// </summary>
         private CurrencyAmount Amount { get; set; }
+        /// <summary>
+        /// Account / accounts present in transaction
+        /// </summary>
         public List<IAccount> Accounts { get; set; }
+        /// <summary>
+        /// Status of transaction
+        /// </summary>
         public TransactionStatus Status { get; set; }
         public TransactionLogEntry(TransactionType type, CurrencyAmount amount,List<IAccount> acounts)
         {

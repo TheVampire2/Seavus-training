@@ -33,7 +33,9 @@ namespace DomainlModel
         /// Account amount
         /// </summary
         public CurrencyAmount Balance { get; protected set; }
-
+        /// <summary>
+        /// Event fired when balance of account is changed 
+        /// </summary>
         public event BalanceChaged OnBalanceChanged;
 
         #endregion
@@ -50,6 +52,7 @@ namespace DomainlModel
             this.Number = Number;
             this.Currency = Currency;
             CurrencyAmount bal = new CurrencyAmount();
+            //Initial balance amount is set to 300 000 
             bal.Amount = 300000;
             bal.Currency = Currency;
             this.Balance = bal;

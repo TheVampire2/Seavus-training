@@ -10,15 +10,15 @@ namespace DomainlModel.Helpers
    public static class AcountHelper
     {   
        /// <summary>
-       /// field for id's
+       /// field that is generated for the new id 
        /// </summary>
         private static int s_AccountId;
-        public static List<string> balanceChangedLog;
+        public static List<string> s_balanceChangedLog;
         
         static AcountHelper()
         {
             s_AccountId = 0;
-            balanceChangedLog = new List<string>();
+            s_balanceChangedLog = new List<string>();
             
         }
        /// <summary>
@@ -79,10 +79,13 @@ namespace DomainlModel.Helpers
        /// <param name="eventArgs"></param>
         public static void LogBalanceChanged(Object sender, BalanceChangedEventArguments eventArgs)
         {
-            balanceChangedLog.Add(String.Format("New balance of the Account with Account No.: {0} is {1} {2}", eventArgs.Account.Number, eventArgs.Account.Balance.Amount, eventArgs.Account.Balance.Currency));
+            s_balanceChangedLog.Add(String.Format("New balance of the Account with Account No.: {0} is {1} {2}", eventArgs.Account.Number, eventArgs.Account.Balance.Amount, eventArgs.Account.Balance.Currency));
             Console.WriteLine(String.Format("New balance of the Account with Account No.: {0} is {1} {2}", eventArgs.Account.Number, eventArgs.Account.Balance.Amount, eventArgs.Account.Balance.Currency));
         }
-
+       /// <summary>
+       /// Method for logging specific exception 
+       /// </summary>
+       /// <param name="e"></param>
         public static void LogException(Exception e)
         {
             Console.WriteLine(e.Message);

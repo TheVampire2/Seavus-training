@@ -18,8 +18,6 @@ namespace DomainlModel
         private DateTime dateTime2;
         private ITransactionAccount ta;
 
-
-
         public LoanAccount(int ID, string number, string currency, TimePeriod Period, InterestRate Interest, DateTime StartDate, DateTime EndDate, ITransactionAccount TransactionAccount) 
             : base(ID,number,currency,Period,Interest,StartDate,EndDate,TransactionAccount)
         {

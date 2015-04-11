@@ -11,8 +11,14 @@ namespace DomainlModel
     [AccountMetadata("Simple transaction account", "No limitations")]
     public class TransactionAccount : Account, ITransactionAccount
     {
+        /// <summary>
+        /// Limit of the account
+        /// </summary>
         public CurrencyAmount Limit { get; set; }
 
+        /// <summary>
+        /// Event fired when balance changed
+        /// </summary>
         public event BalanceChaged OnBalanceChanged;
         public TransactionAccount(int ID, string number, string currency, CurrencyAmount limit)
             : base(ID, number, currency)
@@ -40,9 +46,7 @@ namespace DomainlModel
             }
             else
                 throw new CurrencyMissmatchException();
-            
 
-            return base.DebitAmount(amount);
         }
 
     }

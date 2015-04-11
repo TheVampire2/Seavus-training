@@ -18,3 +18,8 @@ C:\Users\Vladimir\Documents\Visual Studio 2013\DomainlModel\DomainlModel\bin\Deb
 C:\Users\Vladimir\Documents\Visual Studio 2013\DomainlModel\DomainlModel\bin\Debug\MyBankModel.pdb
 C:\Users\Vladimir\Documents\Visual Studio 2013\DomainlModel\DomainlModel\obj\Debug\MyBankModel.dll
 C:\Users\Vladimir\Documents\Visual Studio 2013\DomainlModel\DomainlModel\obj\Debug\MyBankModel.pdb
+C:\Users\Vladimir\Documents\GitHub\Seavus-training\BankApplication\DomainlModel\bin\Debug\MyBankModel.dll
+C:\Users\Vladimir\Documents\GitHub\Seavus-training\BankApplication\DomainlModel\bin\Debug\MyBankModel.pdb
+C:\Users\Vladimir\Documents\GitHub\Seavus-training\BankApplication\DomainlModel\obj\Debug\DomainlModel.csprojResolveAssemblyReference.cache
+C:\Users\Vladimir\Documents\GitHub\Seavus-training\BankApplication\DomainlModel\obj\Debug\MyBankModel.dll
+C:\Users\Vladimir\Documents\GitHub\Seavus-training\BankApplication\DomainlModel\obj\Debug\MyBankModel.pdb

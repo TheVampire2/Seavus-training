@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace DomainlModel
 {
+    /// <summary>
+    /// Specific metadata for account atribute
+    /// </summary>
     [AttributeUsage(AttributeTargets.Class)]
     public class AccountMetadataAttribute : System.Attribute
     {
@@ -19,6 +22,9 @@ namespace DomainlModel
             AccountLimitations = accountLimitations;
         }
     }
+    /// <summary>
+    /// Format restriction attribute for account
+    /// </summary>
     [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field)]
     public class FormatRestrictionAttribute : Attribute
     {

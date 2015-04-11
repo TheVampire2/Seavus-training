@@ -20,10 +20,15 @@ namespace DomainlModel.Delegates
     /// <param name="eventArgs"></param>
     public delegate void BalanceChaged(Object sender, BalanceChangedEventArguments eventArgs);
 
+    /// <summary>
+    /// Delegate for account adding event
+    /// </summary>
+    /// <param name="account"></param>
     public delegate void AccountAddedEventHandler(IAccount account);
     /// <summary>
     /// Class for Balance changed event arguments
     /// </summary>
+    ///
     public class BalanceChangedEventArguments : System.EventArgs
     {
         public IAccount Account { get; private set; }

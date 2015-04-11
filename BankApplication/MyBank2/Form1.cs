@@ -197,6 +197,11 @@ namespace MyBank2
             }
             
         }
+        /// <summary>
+        /// Button Create Loan account
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button2_Click(object sender, EventArgs e)
         {
 
@@ -371,7 +376,10 @@ namespace MyBank2
         }
 
         #endregion
-        
+        /// <summary>
+        /// Method that create multiple account based on the 'type'
+        /// </summary>
+        /// <param name="type">Bitwise operation using flaged enumeration for type of account</param>
         private  void CreateAccounts(CreateAccountType type){
 
 
@@ -424,13 +432,21 @@ namespace MyBank2
             
         }
 
+        /// <summary>
+        /// Logs when some account is added
+        /// </summary>
+        /// <param name="account"></param>
         private void LogAccountAdded(IAccount account)
         {
             string entry = String.Format("New {0} was created on {1} ", account.ToString(), DateTime.Now.ToShortDateString());
             lbLog.Items.Add(entry);
             lbLog.Items[0] = lbLog.Items[lbLog.Items.Count-1];
         }
-
+        /// <summary>
+        /// Creatin multiple accounts
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnCreateAll_Click(object sender, EventArgs e)
         {
             try

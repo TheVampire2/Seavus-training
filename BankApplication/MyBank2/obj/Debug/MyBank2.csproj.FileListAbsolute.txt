@@ -34,3 +34,14 @@ C:\Users\Vladimir\Documents\Visual Studio 2013\DomainlModel\MyBank2\obj\Debug\My
 C:\Users\Vladimir\Documents\Visual Studio 2013\BankApplication\MyBank2\bin\Debug\MyBank.exe.config
 C:\Users\Vladimir\Documents\Visual Studio 2013\BankApplication\MyBank2\obj\Debug\MyBank.exe
 C:\Users\Vladimir\Documents\Visual Studio 2013\BankApplication\MyBank2\obj\Debug\MyBank.pdb
+C:\Users\Vladimir\Documents\GitHub\Seavus-training\BankApplication\MyBank2\bin\Debug\MyBank.exe.config
+C:\Users\Vladimir\Documents\GitHub\Seavus-training\BankApplication\MyBank2\obj\Debug\MyBank.exe
+C:\Users\Vladimir\Documents\GitHub\Seavus-training\BankApplication\MyBank2\obj\Debug\MyBank.pdb
+C:\Users\Vladimir\Documents\GitHub\Seavus-training\BankApplication\MyBank2\bin\Debug\MyBank.exe
+C:\Users\Vladimir\Documents\GitHub\Seavus-training\BankApplication\MyBank2\bin\Debug\MyBank.pdb
+C:\Users\Vladimir\Documents\GitHub\Seavus-training\BankApplication\MyBank2\bin\Debug\MyBankModel.dll
+C:\Users\Vladimir\Documents\GitHub\Seavus-training\BankApplication\MyBank2\bin\Debug\MyBankModel.pdb
+C:\Users\Vladimir\Documents\GitHub\Seavus-training\BankApplication\MyBank2\obj\Debug\MyBank2.csprojResolveAssemblyReference.cache
+C:\Users\Vladimir\Documents\GitHub\Seavus-training\BankApplication\MyBank2\obj\Debug\MyBank2.Form1.resources
+C:\Users\Vladimir\Documents\GitHub\Seavus-training\BankApplication\MyBank2\obj\Debug\MyBank.Properties.Resources.resources
+C:\Users\Vladimir\Documents\GitHub\Seavus-training\BankApplication\MyBank2\obj\Debug\MyBank2.csproj.GenerateResource.Cache

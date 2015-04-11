@@ -37,19 +37,26 @@ namespace DomainlModel
         Debit,
         Credit
     }
+    /// <summary>
+    /// Interest rate of bank
+    /// </summary>
     public struct InterestRate
     {
         public decimal Percent { get; set; }
         public UnitOfTime Unit { get; set; }
 
     }
-
+    /// <summary>
+    /// Period of step
+    /// </summary>
     public struct TimePeriod
     {
         public int Period { get; set; }
         public UnitOfTime Unit { get; set; }
     }
-
+    /// <summary>
+    /// specific unit of time
+    /// </summary>
     public enum UnitOfTime : byte
     {
         None,
@@ -58,6 +65,9 @@ namespace DomainlModel
         Year
 
     }
+    /// <summary>
+    /// Types of account
+    /// </summary>
     [Flags]
     public enum CreateAccountType : byte
     {
