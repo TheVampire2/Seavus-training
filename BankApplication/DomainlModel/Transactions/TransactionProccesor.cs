@@ -29,6 +29,11 @@ namespace DomainlModel
         /// </summary>
         public IList<string> balanceChangeLog;
 
+        /// <summary>
+        /// Indicates whereas the fee is charged or not
+        /// </summary>
+        public bool feeCharged { get; set; }
+
         #endregion
         /// <summary>
         /// Method for gettin the TransactionProccesor
@@ -39,6 +44,7 @@ namespace DomainlModel
         {
             return sTransactionProccesor;
         }
+
         #region Constructors
 
         static TransactionProccesor()
@@ -55,6 +61,7 @@ namespace DomainlModel
             ExternalLogger += Helpers.AcountHelper.NotifyNationalBank;
         }
         #endregion
+
         #region TransactionLogMethods
         /// <summary>
         /// Property that returns the last trasnaction made
@@ -166,7 +173,7 @@ namespace DomainlModel
         /// <param name="amount">Curency amount</param>
         /// <param name="acounts"> Account list</param>
         /// <returns></returns>
-        public TransactionStatus ProccessGroupTransaction(TransactionType transactionType, CurrencyAmount amount, List<IAccount> acounts)
+        public TransactionStatus ProccessGroupTransaction(TransactionType transactionType, CurrencyAmount amount, IList<IAccount> accounts)
         {
             TransactionLogEntry entry;
             entry = new TransactionLogEntry(transactionType, amount, new List<IAccount>());
@@ -177,7 +184,7 @@ namespace DomainlModel
 
             bool flag = true;
 
-            foreach (IAccount acount in acounts)
+            foreach (IAccount acount in accounts)
             {
                 if (acount == null)
                     continue;

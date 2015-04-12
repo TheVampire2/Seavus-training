@@ -10,13 +10,18 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DomainlModel.Helpers;
 using DomainlModel.Delegates;
+using DomainlModel.Extensions;
+
+
 namespace MyBank2
 {
     public partial class Form1 : Form
     {
         public event AccountAddedEventHandler AccountAdded;
         private bool errorOccured { get; set; }
-        private string errorMessage { get; set; }       
+        private string errorMessage { get; set; }      
+ 
+        private ITransactionProccesor transactionProccesor;  
 
         public Form1()
         {
@@ -26,6 +31,7 @@ namespace MyBank2
             FillAccountlist();
             AccountAdded += LogAccountAdded;
             errorOccured = false;
+            transactionProccesor = TransactionProccesor.GetTransactionProccesor();
         }
 
         /// <summary>
@@ -243,6 +249,12 @@ namespace MyBank2
                 ExceptionLogger.LogException(ex.exception);
                 MessageBox.Show(ex.friendlyMessage);
             }
+            catch (Exception ex)
+            {
+                ExceptionLogger.LogException(ex.InnerException);
+                MessageBox.Show(ex.Message);
+            }
+            
             
         }
 
@@ -251,7 +263,7 @@ namespace MyBank2
             IAccount acountFrom = null;
             IAccount acountTo = null;
 
-            ITransactionProccesor transactionProccesor = TransactionProccesor.GetTransactionProccesor();
+            
 
             //tells if the transaction type is Transfer
             bool flag_Transfer = false;
@@ -325,8 +337,17 @@ namespace MyBank2
             }
 
             boxBalance.Text = acountFrom.Balance.Amount.ToString() + " " + acountFrom.Balance.Currency;
-            if (transactionProccesor.LastTransaction != null)
+            
+            ///use of indexer for transaction accounts
+            if (transactionProccesor[transactionProccesor.TransactionCount-1] != null)
                 lbTransactions.Items.Add(transactionProccesor.LastTransaction);
+
+            updateBalanceLog();
+            transactionProccesor.feeCharged = false;
+        }
+
+        private void updateBalanceLog()
+        {
             if (transactionProccesor.balanceChangedCheck() != null)
                 lbLog.Items.Add(transactionProccesor.balanceChangedCheck());
             if (lbLog.Items.Count > 0)
@@ -460,6 +481,33 @@ namespace MyBank2
             }
             
            
+        }
+
+        /// <summary>
+        /// Method that will charge fee from the accounts included in the last transaction
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnChargeTransactionFee_Click(object sender, EventArgs e)
+        {
+            //cheks if the fee is charged
+            if (transactionProccesor.feeCharged)
+                return;
+
+            double fee = 0;
+            TransactionLogEntry lastEntry = transactionProccesor.LastTransaction;
+            if (lastEntry.Accounts[0].Currency == "MKD")
+                fee = 15;
+            else
+                fee = 0.4;
+
+            CurrencyAmount amount = new CurrencyAmount();
+            amount.Amount = (decimal)fee;
+            amount.Currency = lastEntry.Accounts[0].Currency;
+            transactionProccesor.ChargeProcessingFee(amount, lastEntry.Accounts);
+            
+            updateBalanceLog();
+            
         }
 
         

@@ -52,6 +52,7 @@
             this.label20 = new System.Windows.Forms.Label();
             this.lbLog = new System.Windows.Forms.ListBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnChargeTransactionFee = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
             this.Amount = new System.Windows.Forms.Label();
             this.t_txtAmount = new System.Windows.Forms.TextBox();
@@ -322,6 +323,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnChargeTransactionFee);
             this.panel1.Controls.Add(this.label18);
             this.panel1.Controls.Add(this.Amount);
             this.panel1.Controls.Add(this.t_txtAmount);
@@ -337,8 +339,18 @@
             this.panel1.Controls.Add(this.label7);
             this.panel1.Location = new System.Drawing.Point(432, 19);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(267, 174);
+            this.panel1.Size = new System.Drawing.Size(267, 192);
             this.panel1.TabIndex = 55;
+            // 
+            // btnChargeTransactionFee
+            // 
+            this.btnChargeTransactionFee.Location = new System.Drawing.Point(35, 166);
+            this.btnChargeTransactionFee.Name = "btnChargeTransactionFee";
+            this.btnChargeTransactionFee.Size = new System.Drawing.Size(219, 23);
+            this.btnChargeTransactionFee.TabIndex = 77;
+            this.btnChargeTransactionFee.Text = "Charge Transaction Fee";
+            this.btnChargeTransactionFee.UseVisualStyleBackColor = true;
+            this.btnChargeTransactionFee.Click += new System.EventHandler(this.btnChargeTransactionFee_Click);
             // 
             // label18
             // 
@@ -412,7 +424,7 @@
             // 
             // txtTransactionResult
             // 
-            this.txtTransactionResult.Location = new System.Drawing.Point(154, 146);
+            this.txtTransactionResult.Location = new System.Drawing.Point(154, 144);
             this.txtTransactionResult.Name = "txtTransactionResult";
             this.txtTransactionResult.ReadOnly = true;
             this.txtTransactionResult.Size = new System.Drawing.Size(100, 20);
@@ -449,7 +461,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(35, 150);
+            this.label7.Location = new System.Drawing.Point(35, 148);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(97, 13);
             this.label7.TabIndex = 65;
@@ -460,7 +472,7 @@
             this.lbTransactions.FormattingEnabled = true;
             this.lbTransactions.Location = new System.Drawing.Point(7, 38);
             this.lbTransactions.Name = "lbTransactions";
-            this.lbTransactions.Size = new System.Drawing.Size(419, 147);
+            this.lbTransactions.Size = new System.Drawing.Size(419, 173);
             this.lbTransactions.TabIndex = 26;
             // 
             // groupBox3
@@ -699,6 +711,7 @@
         private System.Windows.Forms.ListBox lbLog;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Button btnCreateAll;
+        private System.Windows.Forms.Button btnChargeTransactionFee;
     }
 }
 

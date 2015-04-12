@@ -38,7 +38,7 @@ namespace DomainlModel
                     throw new LimitOverreachedException(amountDiff);
                 }
                 CurrencyAmount ca = new CurrencyAmount();
-                ca.Amount = Balance.Amount + amount.Amount;
+                ca.Amount = Balance.Amount - amount.Amount;
                 ca.Currency = Currency;
                 Balance = ca;
                 OnBalanceChanged(this, new BalanceChangedEventArguments(this, amount));
