@@ -1,6 +1,6 @@
 <h2> Some basic examples of using the SOLID principles </h2>
 
-<h2> SOLID are five basic principles whichhelp to create good software architecture. SOLID is an acronym where:-<h2>
+<h4> SOLID are five basic principles whichhelp to create good software architecture. SOLID is an acronym where:-<h4>
 
 S stands for SRP (Single responsibility principle <br/>
 O stands for OCP (Open closed principle) <br/>
