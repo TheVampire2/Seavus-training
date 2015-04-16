@@ -12,7 +12,7 @@ namespace LiskovSubstitutionPrinciple.TheBad
     {
         public override void PowerWorkout()
         {
-            throw new Exception("WHY THE FU*CK YOU SENDING ME TO POWER WORKOUT, IM STILL A ROOKIE !!! ");
+            throw new Exception("WHY IN THE HELL YOU SENDING ME TO POWER WORKOUT, IM STILL A ROOKIE !!! ");
         }
         public override void Motivate()
         {
