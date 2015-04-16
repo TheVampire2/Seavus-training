@@ -1,0 +1,5 @@
+c:\users\vladimir\documents\visual studio 2013\Projects\SOLID principes\LiskovSubstitutionPrinciple\bin\Debug\LiskovSubstitutionPrinciple.dll
+c:\users\vladimir\documents\visual studio 2013\Projects\SOLID principes\LiskovSubstitutionPrinciple\bin\Debug\LiskovSubstitutionPrinciple.pdb
+c:\users\vladimir\documents\visual studio 2013\Projects\SOLID principes\LiskovSubstitutionPrinciple\obj\Debug\LiskovSubstitutionPrinciple.csprojResolveAssemblyReference.cache
+c:\users\vladimir\documents\visual studio 2013\Projects\SOLID principes\LiskovSubstitutionPrinciple\obj\Debug\LiskovSubstitutionPrinciple.dll
+c:\users\vladimir\documents\visual studio 2013\Projects\SOLID principes\LiskovSubstitutionPrinciple\obj\Debug\LiskovSubstitutionPrinciple.pdb
