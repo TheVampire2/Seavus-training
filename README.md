@@ -1,4 +1,3 @@
-Bank application exercies for seavus talent program
+# Seavus training excercisess
 
-Preview:<br/>
-<img src="http://i.imgur.com/fVVe1zO.png"/>
+
