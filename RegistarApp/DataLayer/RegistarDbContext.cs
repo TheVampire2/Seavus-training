@@ -23,9 +23,6 @@ namespace DataLayer
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.Configurations.Add(new BikeConfiguration());
-        }
-
-
-        
+        }        
     }
 }

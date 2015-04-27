@@ -118,7 +118,9 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Scripts\jquery-1.11.0.min.js" />
     <Content Include="Content\Master.css" />
+    <Content Include="Scripts\menu_vz.js" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\Main.js" />
     <Content Include="Web.config" />

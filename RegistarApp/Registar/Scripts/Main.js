@@ -1,2 +1,2 @@
-﻿var currentTile = document.getElementById("menuHolder").firstElementChild;
-currentTile.style.background = "red";
+﻿//var currentTile = document.getElementById("menuHolder").firstElementChild;
+//currentTile.style.background = "red";
