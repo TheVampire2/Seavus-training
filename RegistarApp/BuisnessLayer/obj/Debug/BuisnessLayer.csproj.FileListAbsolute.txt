@@ -1,0 +1,14 @@
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\RegistarApp\BuisnessLayer\bin\Debug\BuisnessLayer.dll.config
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\RegistarApp\BuisnessLayer\bin\Debug\BuisnessLayer.dll
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\RegistarApp\BuisnessLayer\bin\Debug\BuisnessLayer.pdb
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\RegistarApp\BuisnessLayer\bin\Debug\DataLayer.dll
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\RegistarApp\BuisnessLayer\bin\Debug\DomainModel.dll
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\RegistarApp\BuisnessLayer\bin\Debug\EntityFramework.dll
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\RegistarApp\BuisnessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\RegistarApp\BuisnessLayer\bin\Debug\DataLayer.pdb
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\RegistarApp\BuisnessLayer\bin\Debug\DomainModel.pdb
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\RegistarApp\BuisnessLayer\bin\Debug\EntityFramework.xml
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\RegistarApp\BuisnessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\RegistarApp\BuisnessLayer\obj\Debug\BuisnessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\RegistarApp\BuisnessLayer\obj\Debug\BuisnessLayer.dll
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\RegistarApp\BuisnessLayer\obj\Debug\BuisnessLayer.pdb

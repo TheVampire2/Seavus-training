@@ -1,0 +1,10 @@
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\RegistarApp\DomainModel\bin\Debug\DomainModel.dll.config
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\RegistarApp\DomainModel\bin\Debug\DomainModel.dll
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\RegistarApp\DomainModel\bin\Debug\DomainModel.pdb
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\RegistarApp\DomainModel\bin\Debug\EntityFramework.dll
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\RegistarApp\DomainModel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\RegistarApp\DomainModel\bin\Debug\EntityFramework.xml
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\RegistarApp\DomainModel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\RegistarApp\DomainModel\obj\Debug\DomainModel.csprojResolveAssemblyReference.cache
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\RegistarApp\DomainModel\obj\Debug\DomainModel.dll
+C:\Users\Vladimir\Documents\Visual Studio 2013\Projects\RegistarApp\DomainModel\obj\Debug\DomainModel.pdb

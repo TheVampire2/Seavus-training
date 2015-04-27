@@ -1,0 +1,16 @@
+﻿@model IEnumerable<DomainModel.Bike>
+
+@{
+    ViewBag.Title = "Bike";
+    Layout = "~/Views/Shared/BaseLayout.cshtml";
+}
+
+<h2>Bikes</h2>
+<ul style="list-style-type:none;">
+    @foreach (DomainModel.Bike b in Model)
+    {
+      <li>
+        @String.Format("Reg number: {0}, Type: {1}, City: {2},Colour: {3}", b.RegNum, b.Type, b.City, b.Colour)
+      </li>
+    }
+</ul>
